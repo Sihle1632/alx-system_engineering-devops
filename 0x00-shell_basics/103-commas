@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -Ap | sort -df --key=1,1 --key=2n
+ls -ap | grep -v '^\.\.$' | sort -df | tr '\n' ',' | sed 's/,$/\n/'
