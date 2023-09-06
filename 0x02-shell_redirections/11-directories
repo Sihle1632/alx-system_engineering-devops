@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -lr | wc -l
+ls -lr $(find . -type d -not -name '.' | wc -l)
